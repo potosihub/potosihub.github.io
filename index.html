@@ -1,0 +1,1010 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+	<title>potosihub</title>
+	<head>
+	<style>
+        body {
+            display: flex;
+        }
+        nav {
+            width: 250px;                                                                                        
+            background-color: #f4f4f4;
+            padding: 20px;
+        }
+        main {
+            flex-grow: 1;
+            padding: 20px;
+        }
+        section {
+            margin-bottom: 20px;
+        }
+        .subsection {
+            margin-left: 20px;
+        }
+    </style>
+</head>
+	 <style>
+        .toggle-section {
+            display: none;
+        }
+        .toggle-button {
+            cursor: pointer;
+            background-color: #007BFF;
+            color: white;
+            padding: 5px 10px;
+            border: none;
+            border-radius: 5px;
+        }
+    </style>
+    <script>
+        function toggleSection(id) {
+            var section = document.getElementById(id);
+            if (section.style.display === "none") {
+                section.style.display = "block";
+            } else {
+                section.style.display = "none";
+            }
+        }
+    </script>
+
+</head>
+<body>
+	<header>
+		<div>
+			<a href="#"> <img src="images/logo2.png" width="250" height="250"></a>
+			
+
+
+			<nav>
+				<h2>Navegación</h2>
+				<ul>
+				<li><a href="#inicio">INICIO</a></li>
+				<li><a href="#potosi">TODO SOBRE POTOSI</a></li>
+				<li><a href="#servicios"> SERVICIOS</a></li>
+			    <li><a href="#galeria"> GALERIA</a></li>
+				<li><a href="#nosotros">NOSOTROS</a></li>
+				<li><a href="#contactenos"> CONTACTENOS</a></li>
+				</ul>
+			</nav>
+		</div>
+	</header>
+	<main>
+		
+
+		<section id="inicio">
+			<h1>VILLA IMPERIAL DE POTOSI</h1>
+			<img src="images/im0.jpg" width="1400" height="400">
+			
+			<div>
+				<h1>Bienvenidos</h1>
+				<P> Está pagina te facilitará y te dará la información más relevante de Potosí, donde se destacá su rica historia, cultura, paisajes naturales y sus actividades turísticas. </P>
+			</div>
+			        </section>
+			        <hr>
+	    <section id="potosi">
+
+			<div>
+				<h2>POTOSI DATOS</h2>
+				<p>El departamento de Potosí es uno de los nueve departamentos en que se divide Bolivia. Su capital y ciudad más poblada es la homónima Potosí, famosa por sus yacimientos de metales preciosos.</p>
+				 <button class="toggle-button" onclick="toggleSection('news')">Ver más</button>
+        <section id="news" class="toggle-section">
+
+				 
+				<h3> Geografía y Ubicación </h3>
+				 <button class="toggle-button" onclick="toggleSection('new')">Ver más</button>
+        <section id="new" class="toggle-section">
+        	<h3>UBICACION</h3>
+        	  
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Imagen Ferro</title>
+    <style>
+        .small-image {
+            width: 200px; /* Tamaño pequeño inicial */
+            transition: transform 0.3s ease;
+            cursor: pointer;
+        }
+        .small-image:hover {
+            transform: scale(1.5); /* Aumenta el tamaño al pasar el cursor */
+        }
+        .fullscreen-image {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.8);
+            justify-content: center;
+            align-items: center;
+        }
+        .fullscreen-image img {
+            max-width: 90%;
+            max-height: 90%;
+        }
+    </style>
+</head>
+<body>
+    <h1>Ubicacion gráfica</h1>
+    <img src="images/im70.png" alt="ferroviaria" class="small-image" onclick="openFullscreen(this.src)">
+    
+    <div id="fullscreenContainer" class="fullscreen-image" onclick="closeFullscreen()">
+        <img id="fullscreenImage" src="" alt="Imagen en pantalla completa">
+    </div>
+
+    <script>
+        function openFullscreen(src) {
+            const fullscreenContainer = document.getElementById('fullscreenContainer');
+            const fullscreenImage = document.getElementById('fullscreenImage');
+            fullscreenImage.src = src;
+            fullscreenContainer.style.display = 'flex';
+        }
+
+        function closeFullscreen() {
+            const fullscreenContainer = document.getElementById('fullscreenContainer');
+            fullscreenContainer.style.display = 'none';
+        }
+    </script>
+</body>
+
+        <p>Superficie: 118.218 Km2.</p>
+
+<h5>(Constituye el 11 % del territorio nacional, ocupando el 4to. lugar en extensión.)</h5>
+        	<p> coordenadas: 19°35'21"S 65°45'12"W </p>
+				
+                <P>Está ubicado al suroeste del país, limitando al norte con los departamentos de Oruro y Cochabamba, al este con los departamentos de Chuquisaca y Tarija, y al sur con la República Argentina hasta el trifinio cerro Zapaleri, donde empieza su frontera con la República de Chile, hacia el oeste.</P>
+                <h4>Características Geográficas</h4>
+                <ul>
+                	<li>Altitud: La altitud promedio del departamento es de 4067 m s.n.m.</li>
+                	<li>Relieve: Es montañoso, con una gran altiplanicie y valles con microclimas diversos</li>
+                	<li>Elevaciones: Entre sus elevaciones más importantes se encuentran el Uturuncu, el Sairecabur, el Cerro Lípez, el Licancabur y el Cerro Putana. </li>
+                	<li>Cordilleras: La Cordillera Occidental y la Oriental atraviesan el departamento. </li>
+                	<li>Salar de Uyuni: En el noroeste del departamento se encuentra el salar de Uyuni, la zona más baja del Altiplano.</li>
+                	<li>Cerro Rico: La ciudad de Potosí se encuentra a las faldas del Cerro Rico, donde se ubicó la mina de plata más grande del mundo desde mediados del siglo XVI hasta mediados del siglo XVII. </li>
+                	<li>Clima: El clima del departamento es frío y seco.</li>
+                
+                </ul>
+                <p></p>
+            </section>
+				<h3>DIVISION ADMINISTRATIVA</h3>
+				<button class="toggle-button" onclick="toggleSection('v1')">Ver más</button>
+        <section id="v1" class="toggle-section">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Imagen Ferro</title>
+    <style>
+        .small-image {
+            width: 200px; /* Tamaño pequeño inicial */
+            transition: transform 0.3s ease;
+            cursor: pointer;
+        }
+        .small-image:hover {
+            transform: scale(1.5); /* Aumenta el tamaño al pasar el cursor */
+        }
+        .fullscreen-image {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.8);
+            justify-content: center;
+            align-items: center;
+        }
+        .fullscreen-image img {
+            max-width: 90%;
+            max-height: 90%;
+        }
+    </style>
+</head>
+<body>
+    <h1>Division Administrativa</h1>
+    <img src="images/im53.png" alt="division" class="small-image" onclick="openFullscreen(this.src)">
+    
+    <div id="fullscreenContainer" class="fullscreen-image" onclick="closeFullscreen()">
+        <img id="fullscreenImage" src="" alt="Imagen en pantalla completa">
+    </div>
+
+    <script>
+        function openFullscreen(src) {
+            const fullscreenContainer = document.getElementById('fullscreenContainer');
+            const fullscreenImage = document.getElementById('fullscreenImage');
+            fullscreenImage.src = src;
+            fullscreenContainer.style.display = 'flex';
+        }
+
+        function closeFullscreen() {
+            const fullscreenContainer = document.getElementById('fullscreenContainer');
+            fullscreenContainer.style.display = 'none';
+        }
+    </script>
+</body>
+
+				
+				<p>Administrativamente el departamento de Potosí se encuentra conformado por 16 provincias, que a la vez, estos se encuentran divididos en 41 municipios.</p>
+
+				<h2>Provincias del Departamento de Potosí, Bolivia</h2>
+
+<table border="1">
+    <thead>
+        <tr>
+            <th>Provincia</th>
+            <th>Capital</th>
+            <th>Superficie (km²)</th>
+            <th>Población</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr><td>Alonso de Ibáñez</td><td>Sacaca</td><td>2170</td><td>29,821</td></tr>
+        <tr><td>Quijarro</td><td>Uyuni</td><td>14,890</td><td>37,431</td></tr>
+        <tr><td>General Bilbao</td><td>Arampampa</td><td>640</td><td>10,850</td></tr>
+        <tr><td>Charcas</td><td>San Pedro de Buena Vista</td><td>2964</td><td>41,651</td></tr>
+        <tr><td>Chayanta</td><td>Colquechaca</td><td>7026</td><td>98,946</td></tr>
+        <tr><td>Cornelio Saavedra</td><td>Betanzos</td><td>2375</td><td>61,398</td></tr>
+        <tr><td>Daniel Campos</td><td>Llica</td><td>12,106</td><td>5270</td></tr>
+        <tr><td>Enrique Baldivieso</td><td>San Agustín</td><td>2254</td><td>2006</td></tr>
+        <tr><td>Linares</td><td>Puna</td><td>5136</td><td>50,817</td></tr>
+        <tr><td>Modesto Omiste</td><td>Villazón</td><td>2260</td><td>41,124</td></tr>
+        <tr><td>Nor Chichas</td><td>Santiago de Cotagaita</td><td>8979</td><td>32,946</td></tr>
+        <tr><td>Nor Lípez</td><td>Colcha K</td><td>20,892</td><td>11,594</td></tr>
+        <tr><td>Rafael Bustillo</td><td>Uncía</td><td>2235</td><td>75,599</td></tr>
+        <tr><td>Sur Chichas</td><td>Tupiza</td><td>8516</td><td>47,005</td></tr>
+        <tr><td>Sur Lípez</td><td>San Pablo de Lípez</td><td>22,355</td><td>5284</td></tr>
+        <tr><td>Tomás Frías</td><td>Potosí</td><td>3420</td><td>189,978</td></tr>
+    </tbody>
+</table>
+
+<h2>Municipios del Departamento de Potosí, Bolivia</h2>
+
+<table border="1">
+    <thead>
+        <tr>
+            <th>Municipio</th>
+            <th>Población</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr><td>Sacaca</td><td>22,470</td></tr>
+        <tr><td>Caripuyo</td><td>9875</td></tr>
+        <tr><td>Uyuni</td><td>18,632</td></tr>
+        <tr><td>Tomave</td><td>14,121</td></tr>
+        <tr><td>Porco</td><td>6412</td></tr>
+        <tr><td>Arampampa</td><td>2648</td></tr>
+        <tr><td>Acasio</td><td>2899</td></tr>
+        <tr><td>San Pedro de Buena Vista</td><td>33,892</td></tr>
+        <tr><td>Toro Toro</td><td>11,919</td></tr>
+        <tr><td>Colquechaca</td><td>39,442</td></tr>
+        <tr><td>Ravelo</td><td>23,044</td></tr>
+        <tr><td>Pocoata</td><td>23,430</td></tr>
+        <tr><td>Ocurí</td><td>23,187</td></tr>
+        <tr><td>San Pedro de Macha</td><td>N/A</td></tr>
+        <tr><td>Betanzos</td><td>41,043</td></tr>
+        <tr><td>Chaquí</td><td>10,290</td></tr>
+        <tr><td>Tacobamba</td><td>13,875</td></tr>
+        <tr><td>Llica</td><td>5554</td></tr>
+        <tr><td>Tahua</td><td>5769</td></tr>
+        <tr><td>San Agustín</td><td>2006</td></tr>
+        <tr><td>Puna</td><td>41,583</td></tr>
+        <tr><td>Caiza D</td><td>9566</td></tr>
+        <tr><td>Ckochas</td><td>4311</td></tr>
+        <tr><td>Villazón</td><td>41,124</td></tr>
+        <tr><td>Cotagaita</td><td>23,850</td></tr>
+        <tr><td>Vitichi</td><td>9649</td></tr>
+        <tr><td>Colcha K</td><td>11,763</td></tr>
+        <tr><td>San Pedro de Quemes</td><td>1088</td></tr>
+        <tr><td>Uncía</td><td>25,790</td></tr>
+        <tr><td>Chayanta</td><td>15,456</td></tr>
+        <tr><td>Llallagua</td><td>34,898</td></tr>
+        <tr><td>Chuquiuta Ayllu Jucumani</td><td>5662</td></tr>
+        <tr><td>Tupiza</td><td>37,208</td></tr>
+        <tr><td>Atocha</td><td>7795</td></tr>
+        <tr><td>San Pablo de Lípez</td><td>2694</td></tr>
+        <tr><td>San Antonio de Esmoruco</td><td>2330</td></tr>
+        <tr><td>Mojinete</td><td>694</td></tr>
+        <tr><td>Potosí</td><td>166,102</td></tr>
+        <tr><td>Tinguipaya</td><td>30,842</td></tr>
+        <tr><td>Yocalla</td><td>8645</td></tr>
+        <tr><td>Urmiri</td><td>2664</td></tr>
+    </tbody>
+</table>
+			</section>
+				<h3>ECONOMIA</h3>
+				<button class="toggle-button" onclick="toggleSection('v2')">Ver más</button>
+        <section id="v2" class="toggle-section">
+				<p>La economía del departamento de Potosí que tradicionalmente se ha caracterizado por ser un departamento productor de minerales, lo que le ha permitido convertirse en la quinta economía departamental más grande del país, después de Santa Cruz, La Paz, Cochabamba y Tarija.</p>
+				<p>PIB(2022)</p>
+				<p>El Producto Interno Bruto (PIB) de Potosí en 2022 representó el 6,34% del PIB nacional de Bolivia(2.624 mil millones). En 2021, el PIB de Potosí creció un 15,7%, lo que superó la caída del 15,5% que se registró en 2020.</p>
+				<p>PIB 	per cápita (2021)</p>
+				<p>En 2021, el PIB per cápita de Potosí fue de $us 3.027, mientras que en 2020 fue de $us 2.338.</p>
+				<p>En cuanto a las exportaciones, en agosto de 2022, Potosí sumó $us 1.990 millones en exportaciones, de los cuales más del 90% correspondió a minerales.</p>
+				<p>Actualmente, la base de la economía potosina tiene a la minería de extracción primaria como su pilar fundamental y sus ascensos y caídas repercuten en toda la sociedad.</p>
+				<h2>Aspectos Relacionados</h2>
+				<h3>IDH (2022)</h3>
+				<p>0.612</p>
+
+<body>
+    <h2>Infraestructura en Potosí</h2>
+    <h3>1. Transporte</h3>
+    <h4>Carreteras</h4>
+    <p>La red vial en Potosí es básica, y muchas de las rutas no están pavimentadas, especialmente en áreas rurales. Las principales rutas que conectan Potosí con otras ciudades como Sucre, Oruro y La Paz están asfaltadas, pero requieren mantenimiento constante debido al clima y la geografía montañosa.</p>
+    <h4>Ferrocarril</h4>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Imagen Ferro</title>
+    <style>
+        .small-image {
+            width: 200px; /* Tamaño pequeño inicial */
+            transition: transform 0.3s ease;
+            cursor: pointer;
+        }
+        .small-image:hover {
+            transform: scale(1.5); /* Aumenta el tamaño al pasar el cursor */
+        }
+        .fullscreen-image {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.8);
+            justify-content: center;
+            align-items: center;
+        }
+        .fullscreen-image img {
+            max-width: 90%;
+            max-height: 90%;
+        }
+    </style>
+</head>
+<body>
+    <h1>Ferrocarriles en Bolivia</h1>
+    <img src="images/im12.png" alt="ferroviaria" class="small-image" onclick="openFullscreen(this.src)">
+    
+    <div id="fullscreenContainer" class="fullscreen-image" onclick="closeFullscreen()">
+        <img id="fullscreenImage" src="" alt="Imagen en pantalla completa">
+    </div>
+
+    <script>
+        function openFullscreen(src) {
+            const fullscreenContainer = document.getElementById('fullscreenContainer');
+            const fullscreenImage = document.getElementById('fullscreenImage');
+            fullscreenImage.src = src;
+            fullscreenContainer.style.display = 'flex';
+        }
+
+        function closeFullscreen() {
+            const fullscreenContainer = document.getElementById('fullscreenContainer');
+            fullscreenContainer.style.display = 'none';
+        }
+    </script>
+</body>
+
+    <p>Potosí está conectado mediante una línea ferroviaria que principalmente facilita el transporte de minerales hacia otras regiones y puertos para la exportación.</p>
+    <p>La Estación Potosí es parte de la Ferroviaria Andina, una de las dos redes ferroviarias de Bolivia. La otra red es la Ferroviaria Oriental, que se encuentra en el este del país. Ambas redes tienen una línea troncal que llega hasta el sur del país. </p>
+    <h4>Aéreo</h4>
+    
+    <p>El departamento cuenta con el aeropuerto Capitán Nicolás Rojas, que tiene vuelos limitados y opera principalmente para vuelos internos. Su infraestructura es limitada, por lo que necesita modernización para mejorar el acceso aéreo, particularmente para el turismo.</p>
+    <h3>2. Agua y Saneamiento</h3>
+    <h4>Abastecimiento de agua</h4>
+    <p>Potosí enfrenta desafíos en el acceso al agua potable debido a su ubicación geográfica y clima seco. Las represas y sistemas de distribución necesitan mejoras para abastecer a la población y apoyar al sector minero, que consume grandes cantidades de agua.</p>
+    <h4>Saneamiento</h4>
+    <p>Las áreas urbanas tienen acceso a servicios básicos de saneamiento, aunque en áreas rurales estos servicios son limitados, lo que representa un desafío en términos de salud pública y desarrollo.</p>
+    <h3>3. Energía</h3>
+    <h4>Electricidad</h4>
+    <p>La electricidad en Potosí es principalmente generada a partir de fuentes hidroeléctricas y térmicas. La cobertura eléctrica es alta en áreas urbanas, pero en las zonas rurales aún hay poblaciones sin acceso.</p>
+    <h4>Energías renovables</h4>
+    <p>Dada la abundancia de radiación solar, existen proyectos en desarrollo para aprovechar la energía solar, especialmente en áreas aisladas. También hay interés en explorar otras fuentes renovables como la energía eólica.</p>
+    <h3>4. Telecomunicaciones</h3>
+    <h4>Conectividad</h4>
+    <p>La conectividad de internet y telefonía móvil está mejorando, aunque todavía hay áreas rurales con baja cobertura de señal. La inversión en infraestructura de telecomunicaciones es clave para mejorar el acceso a la educación, la salud y el comercio electrónico.</p>
+    <h4>Proyectos de expansión</h4>
+    <p>Se están implementando proyectos para ampliar la cobertura de internet y telecomunicaciones, especialmente en las ciudades turísticas y mineras.</p>
+    <h3>5. Infraestructura Turística</h3>
+    <h4>Servicios de alojamiento</h4>
+    <p>Potosí cuenta con hoteles y alojamientos para turistas, especialmente en la ciudad de Potosí y en Uyuni, que es la puerta de entrada al Salar de Uyuni, uno de los destinos más visitados en Bolivia. Sin embargo, hay una falta de infraestructura de lujo y servicios turísticos en algunas áreas remotas.</p>
+    <h4>Atracciones turísticas</h4>
+    <p>El departamento posee sitios turísticos importantes como el Cerro Rico, las aguas termales, iglesias coloniales y el mencionado Salar de Uyuni. Sin embargo, la accesibilidad y los servicios de soporte (como señalización, guías capacitados, y centros de información) necesitan mejoras.</p>
+    <h3>6. Infraestructura Minera</h3>
+    <h4>Mina Cerro Rico</h4>
+    <p>Es una de las minas más emblemáticas de Bolivia y una fuente importante de ingresos. Su infraestructura incluye túneles de extracción, plantas de procesamiento y sistemas de transporte para minerales. Sin embargo, la actividad minera ha provocado problemas ambientales y estructurales en la zona, y las condiciones de trabajo requieren mejoras.</p>
+    <h4>Otras áreas mineras</h4>
+    <p>Además del Cerro Rico, existen diversas cooperativas mineras que operan en diferentes partes del departamento, aunque la falta de tecnologías modernas limita la eficiencia y sostenibilidad de la extracción.</p>
+    <h3>7. Educación y Salud</h3>
+    <h4>Infraestructura educativa</h4>
+    <p>Existen escuelas y colegios en las principales ciudades, pero en áreas rurales muchos estudiantes enfrentan dificultades de acceso. Se requiere infraestructura adicional y recursos educativos para mejorar la calidad de la educación en estas zonas.</p>
+    <h4>Servicios de salud</h4>
+    <p>Hay hospitales y centros de salud en Potosí, aunque la cobertura y calidad de los servicios varían considerablemente entre áreas urbanas y rurales. Las instalaciones necesitan equipos modernos y personal capacitado para mejorar la atención, especialmente en zonas alejadas.</p>
+</body>
+ <h2>Desarrollo de Potosí</h2> <h4>(vision del gobierno de turno)</h4>
+</head>
+<body>
+    <h3>Desarrollo del Departamento de Potosí</h3>
+    <p>El desarrollo del departamento de Potosí está orientado a fortalecer sus sectores clave, como la minería, el turismo y la agricultura, al mismo tiempo que se mejoran las condiciones de vida de sus habitantes mediante inversiones en infraestructura y servicios básicos. A continuación, se detallan las perspectivas y áreas de crecimiento para el futuro de Potosí:</p>
+    
+    <h3>1. Modernización del Sector Minero</h3>
+    <h4>Tecnificación y sostenibilidad</h4>
+    <p>La minería sigue siendo el pilar de la economía de Potosí, pero el agotamiento de algunos recursos y el impacto ambiental han motivado el interés por implementar tecnologías más avanzadas y sostenibles. Se espera que el uso de técnicas modernas pueda aumentar la eficiencia y reducir los riesgos ambientales.</p>
+    <h4>Proyectos de valor agregado</h4>
+    <p>Existen iniciativas para implementar plantas de procesamiento que permitan a Potosí exportar productos con mayor valor agregado (como productos refinados de minerales) en lugar de materias primas, lo cual podría incrementar los ingresos y generar empleos locales.</p>
+    
+    <h3>2. Desarrollo del Turismo Sostenible</h3>
+    <h4>Infraestructura turística</h4>
+    <p>Con el aumento del turismo hacia destinos icónicos como el Salar de Uyuni y el Cerro Rico, la región está promoviendo el desarrollo de infraestructura turística amigable con el medio ambiente, como eco-hoteles, rutas turísticas bien señalizadas y centros de interpretación cultural.</p>
+    <h4>Diversificación de destinos</h4>
+    <p>Las autoridades buscan diversificar la oferta turística al promover áreas menos conocidas como las aguas termales de Llica, las lagunas de colores, y las iglesias coloniales. Esto podría ayudar a descongestionar los destinos más concurridos y distribuir los beneficios económicos del turismo a otras zonas.</p>
+    <h4>Formación de guías locales</h4>
+    <p>Se planea formar y certificar guías turísticos locales para mejorar la experiencia del visitante y fortalecer la identidad cultural de Potosí.</p>
+    
+    <h3>3. Mejora de Infraestructura de Transporte</h3>
+    <h4>Conectividad vial</h4>
+    <p>La mejora de carreteras y caminos en el departamento es una prioridad para facilitar el acceso a los destinos turísticos y las zonas agrícolas. En el futuro, se espera contar con una red de carreteras pavimentadas que conecte tanto las principales ciudades como las comunidades rurales.</p>
+    <h4>Aeropuertos</h4>
+    <p>La modernización del aeropuerto de Potosí y la ampliación de las rutas de vuelo internas pueden mejorar el acceso de turistas nacionales e internacionales, impulsando el crecimiento del sector turístico.</p>
+    <h4>Expansión del transporte ferroviario</h4>
+    <p>La reactivación y ampliación del sistema ferroviario, especialmente para el transporte de carga minera, reduciría los costos logísticos y fomentaría el comercio entre Potosí y otras regiones del país y con los puertos para exportación.</p>
+    
+    <h3>4. Aprovechamiento de Energías Renovables</h3>
+    <h4>Proyectos solares</h4>
+    <p>Gracias a la alta radiación solar en el altiplano, Potosí tiene un enorme potencial para proyectos de energía solar. Esto permitiría a la región abastecer no solo sus necesidades energéticas sino también vender energía a otras regiones de Bolivia.</p>
+    <h4>Electrificación rural</h4>
+    <p>Se está desarrollando un plan de electrificación rural utilizando paneles solares y minihidroeléctricas, lo cual mejorará la calidad de vida y la productividad en áreas remotas.</p>
+    
+    <h3>5. Innovación en Agricultura y Ganadería</h3>
+    <h4>Agricultura sostenible</h4>
+    <p>Se están impulsando prácticas agrícolas sostenibles y la diversificación de cultivos para adaptarse al clima árido de Potosí. La introducción de sistemas de riego y técnicas modernas de cultivo puede mejorar la productividad agrícola.</p>
+    <h4>Producción de quinua y camélidos</h4>
+    <p>La quinua, como producto de exportación, y la cría de camélidos (llamas y alpacas) tienen un gran potencial económico y cultural. Además, se espera desarrollar productos derivados (textiles, carne y derivados) para agregar valor y generar ingresos adicionales.</p>
+    
+    <h3>6. Expansión de Telecomunicaciones y Digitalización</h3>
+    <h4>Cobertura de internet</h4>
+    <p>Se proyecta la expansión de la red de fibra óptica y estaciones de telecomunicaciones para mejorar el acceso a internet en zonas rurales, lo cual facilitaría el acceso a la educación, la salud y los servicios financieros digitales.</p>
+    <h4>Digitalización del comercio</h4>
+    <p>Con el acceso a internet, el comercio electrónico podría crecer en la región, permitiendo a los productores locales vender sus productos directamente y atraer nuevos negocios al departamento.</p>
+    
+    <h3>7. Mejoras en Salud y Educación</h4>
+    <h4>Construcción de centros de salud rurales</h4>
+    <p>La creación de centros de salud en áreas rurales y la capacitación de personal médico permitirían un acceso más igualitario a los servicios de salud, reduciendo la dependencia de las ciudades principales.</p>
+    <h4>Educación técnica y universitaria</h4>
+    <p>Se planea fortalecer las instituciones de educación técnica y universitaria en Potosí para que ofrezcan programas alineados con las necesidades del mercado laboral, como minería sostenible, gestión turística y agricultura moderna, lo cual fortalecería el talento local y reduciría la migración hacia otras ciudades.</p>
+    
+    <h3>8. Impulso a la Identidad Cultural y Artesanal</h3>
+    <h4>Fomento a la artesanía y cultura local</h4>
+    <p>Los productos artesanales de Potosí, como textiles, cerámica y joyería, tienen un alto valor cultural y turístico. Se están promoviendo proyectos para apoyar a artesanos locales con talleres, certificaciones y canales de venta.</p>
+    <h4>Eventos culturales</h4>
+    <p>La realización de festivales y eventos culturales internacionales que celebren la historia y la cultura de Potosí pueden atraer turistas y generar oportunidades para los habitantes.</p>
+    
+    <h2>Conclusión</h2>
+    <p>Las perspectivas de desarrollo para Potosí son prometedoras si se abordan con una visión de sostenibilidad y aprovechamiento de recursos. Con inversiones adecuadas y planificación estratégica, el departamento puede lograr un crecimiento diversificado, mejorando la calidad de vida de su población y atrayendo nuevos visitantes y oportunidades económicas. Estos esfuerzos podrían hacer de Potosí una región más competitiva tanto a nivel nacional como internacional.</p>
+</body>
+
+			</section>
+				<h3>Historia</h3>
+				
+				<button class="toggle-button" onclick="toggleSection('v3')">Ver más</button>
+        <section id="v3" class="toggle-section">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <body>
+
+<header>
+    <h1>Historia del Departamento de Potosí, Bolivia</h1>
+</header>
+
+
+    <section>
+        <h2>1. Época Prehispánica</h2>
+        <p>Antes de la llegada de los españoles, el territorio de Potosí estuvo habitado por varias civilizaciones andinas, entre ellas los Chichas y los Charcas. Estas culturas desarrollaron sistemas de agricultura en terrazas, técnicas de riego y conocimientos avanzados sobre minería. Los pueblos originarios ya conocían los minerales de la región y extraían algunos metales preciosos, aunque en menor escala.</p>
+    </section>
+
+    <section>
+        <h2>2. Descubrimiento del Cerro Rico (1545)</h2>
+        <p>La historia moderna de Potosí comenzó en 1545, cuando Diego Huallpa descubrió plata en el Cerro Rico. Este hallazgo convirtió a Potosí en una de las ciudades más ricas del mundo en el siglo XVII.</p>
+    </section>
+
+    <section>
+        <h2>3. La Villa Imperial y la Casa de la Moneda</h2>
+        <p>En 1572, se estableció la Casa de la Moneda, donde se acuñaban monedas de plata para el Imperio español. Sin embargo, esta prosperidad tuvo un alto costo humano para indígenas y esclavos africanos.</p>
+    </section>
+
+    <section>
+        <h2>4. La Guerra de la Independencia (1809-1825)</h2>
+        <p>Durante el siglo XIX, Potosí fue un escenario clave de la lucha por la independencia. En 1825, Bolivia logró su independencia, y Potosí pasó a formar parte del nuevo Estado.</p>
+    </section>
+
+    <section>
+        <h2>5. La Minería y la Economía Republicana</h2>
+        <p>Tras la independencia, Potosí continuó siendo un centro minero, aunque ahora con la extracción de estaño. La economía estuvo controlada por los "barones del estaño", familias poderosas que concentraban la riqueza del país.</p>
+    </section>
+
+    <section>
+        <h2>6. Reforma Agraria y Minera (Siglo XX)</h2>
+        <p>Con la Revolución de 1952, se nacionalizaron las minas y se implementaron reformas agrarias. La Corporación Minera de Bolivia (COMIBOL) asumió el control de las minas nacionalizadas.</p>
+    </section>
+
+    <section>
+        <h2>7. Potosí en la Actualidad</h2>
+        <p>Hoy en día, Potosí sigue siendo un símbolo de riqueza mineral y un importante destino turístico. Su historia y el Cerro Rico representan tanto grandeza como desafíos, siendo Patrimonio Cultural de la Humanidad desde 1987.</p>
+    </section>
+
+
+</body>
+
+</p>
+</section>
+<h3>Demografía</h3>
+<button class="toggle-button" onclick="toggleSection('v4')">Ver más</button>
+        <section id="v4" class="toggle-section">
+
+<p>De acuerdo con el Censo de Población y Vivienda 2024, el departamento de Potosí tiene una población de 856.419 habitantes, lo que lo convierte en el cuarto departamento más poblado de Bolivia.</p>
+<p>En la época colonial, Potosí era una de las ciudades más importantes del mundo debido a su famoso Cerro Rico. En 1560, su población era de aproximadamente 160 mil personas.</p>
+<p>Densidad: 7,24 hab./km²</p>
+<h4>Grupos étnicos</h4>
+<ol>
+ <li> Quechua: aproximadamente 65% de la población.</li>
+<li>Aymara: alrededor de 10%.</li>
+<li>Mestizo y otros: aproximadamente 25%.</li>
+</ol>
+<h3>Lenguas oficiales</h3>
+<p>Las lenguas que se hablan en el departamento de Potosí, Bolivia, son el castellano, el quechua y el aimara:</p> 
+<ul>
+<li>El castellano y el quechua son los idiomas oficiales del departamento.</li>
+<li>En el norte de Potosí, en pueblos como San Pedro de Buenavista, se ha consolidado un bilingüismo estable entre el castellano y el quechua. </li>
+<li>En el ayllu Sikuya, se habla el aymara, el quechua y el español. </li>
+</ul>
+</section>
+<h3>Turismo y Atracciones Naturales</h3>
+<button class="toggle-button" onclick="toggleSection('v5')">Ver más</button>
+        <section id="v5" class="toggle-section">
+
+
+<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Turismo en Potosí, Bolivia</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        h1, h2, h3 {
+            color: #0077b6;
+        }
+        .container {
+            width: 80%;
+            margin: auto;
+            overflow: hidden;
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            margin-top: 20px;
+        }
+        .section {
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h1>Turismo en Potosí, Bolivia</h1>
+    <p>Explora las maravillas naturales e históricas de Potosí, Bolivia, un destino único en los Andes que combina paisajes impresionantes y cultura ancestral.</p>
+
+    <div class="section">
+        <h2>1. Salar de Uyuni</h2>
+        <p><strong>Descripción:</strong> Es el salar más grande del mundo, con una superficie de alrededor de 10,582 km². En la época de lluvias, se convierte en un espejo gigante que refleja el cielo, creando una de las vistas más impactantes del planeta.</p>
+        <p><strong>Actividades:</strong> Tours en vehículos 4x4, visitas a la Isla Incahuasi (con cactus gigantes) y fotografía en el paisaje único, especialmente en la temporada seca donde se pueden explorar formaciones de sal.</p>
+    </div>
+
+    <div class="section">
+        <h2>2. Reserva Nacional de Fauna Andina Eduardo Avaroa</h2>
+        <p><strong>Descripción:</strong> Una reserva en el suroeste de Potosí con desiertos, lagunas coloridas y formaciones geológicas impresionantes.</p>
+        <p><strong>Principales atracciones:</strong></p>
+        <ul>
+            <li><strong>Laguna Colorada:</strong> Con un color rojo intenso debido a algas y minerales, hogar de varias especies de flamencos.</li>
+            <li><strong>Laguna Verde:</strong> Una laguna de color esmeralda situada al pie del volcán Licancabur.</li>
+            <li><strong>Géiseres de Sol de Mañana:</strong> Una zona geotérmica con géiseres, fumarolas y piscinas de lodo hirviente.</li>
+        </ul>
+    </div>
+
+    <div class="section">
+        <h2>3. Ciudad de Potosí y el Cerro Rico</h2>
+        <p><strong>Descripción:</strong> La ciudad de Potosí, una de las más altas del mundo, fue famosa en la época colonial por sus minas de plata en el Cerro Rico y es Patrimonio de la Humanidad por la UNESCO.</p>
+        <p><strong>Actividades:</strong> Visitas guiadas a las minas del Cerro Rico, recorridos por la Casa de la Moneda y exploración del centro histórico colonial.</p>
+    </div>
+
+    <div class="section">
+        <h2>4. Torotoro, Parque Nacional</h2>
+        <p><strong>Descripción:</strong> Una joya natural en Potosí, conocida por su geología, cañones, cavernas y fósiles de dinosaurios.</p>
+        <p><strong>Principales atracciones:</strong></p>
+        <ul>
+            <li><strong>Caverna de Umajalanta:</strong> Una cueva extensa con estalactitas y estalagmitas.</li>
+            <li><strong>Huellas de dinosaurios:</strong> Varias huellas fosilizadas que permiten retroceder en el tiempo.</li>
+            <li><strong>Cañón de Torotoro:</strong> Un cañón de gran belleza donde se puede hacer senderismo y ver cascadas.</li>
+        </ul>
+    </div>
+
+    <div class="section">
+        <h2>5. Tupiza</h2>
+        <p><strong>Descripción:</strong> Una pequeña ciudad rodeada de formaciones rocosas y paisajes rojos, conocida como el “Far West boliviano” por sus escenarios parecidos al oeste estadounidense.</p>
+        <p><strong>Actividades:</strong> Excursiones a caballo, trekking y recorridos en vehículos todo terreno.</p>
+    </div>
+
+    <div class="section">
+        <h2>6. Laguna Celeste</h2>
+        <p><strong>Descripción:</strong> Esta laguna tiene un color celeste llamativo debido a la presencia de minerales, ubicada en el municipio de Lípez. Es menos concurrida pero igualmente hermosa.</p>
+        <p><strong>Actividades:</strong> Observación de fauna, especialmente flamencos, y fotografía del paisaje andino.</p>
+    </div>
+
+    <div class="section">
+        <h2>7. Otras Atracciones Notables</h2>
+        <ul>
+            <li><strong>Valle de la Luna (Tupiza):</strong> Formaciones rocosas erosionadas ideales para senderismo.</li>
+            <li><strong>Puya Raimondi en Llica:</strong> Una planta andina endémica y rara en el área de Sajama.</li>
+        </ul>
+    </div>
+
+    <div class="section">
+        <h2>8. Festividades Culturales</h2>
+        <p><strong>Fiesta de San Bartolomé (Tinku):</strong> Una celebración de rituales prehispánicos y católicos en Macha, que atrae visitantes interesados en la cultura indígena y espiritualidad ancestral.</p>
+    </div>
+</div>
+
+</section>
+</body></section>
+
+				</div>
+				<section id="servicios">
+					<h1>Servicios</h1>
+			<div class="container" class="seccion"> <!--1-->
+				<div class="row"> <!--2-->
+					<div class="columna columna-33">
+						<div class="bloque-servicio">
+							
+							<div class="bloque-contenido-servicio"> 
+								<h3>Servicio turismo</h3>
+								<p>Sitios sobre turismo en Potosi</p>
+								<ul>
+									<li><a href="https://www.tripadvisor.es/Attractions-g295431-Activities-Potosi_Potosi_Department.html">los mejores</a>pagina de turismo</li>
+									<li><a href="https://www.boliviandando.com/es/atracciones/laguna-colorada/"></a>laguna colorada</li>
+									<li><a href="https://www.casanacionaldemoneda.bo/">Casa de la moneda</a></li>
+								    <li><a href="https://www.salardeuyuni.com/es/salar-de-uyuni/">Salar de Uyuni</a></li>
+								    <li><a href="https://www.tupizatours.com/tour/20/category">Tupiza</a></li>
+								</ul>
+
+								
+							</div> 
+						</div> 
+					</div> 
+					<div class="columna columna-33">
+						<div class="bloque-servicio">
+							
+
+							
+							<div class="bloque-contenido-servicio">
+								<h3>Comida</h3>
+								<p>Conoce la gastronomia Potosina</p>
+								<ul>
+							  
+							    <h2>Las mejores</h2>
+								<li><a href="https://g.co/kgs/nLrS6La">El Fogón</a></li>
+								<li><a href="https://g.co/kgs/FFR6nwJ">La Casona 1775</a></li>
+								<li><a href="https://g.co/kgs/yCVyKua">El Tenedor de Plata</a></li>
+								<li><a href="http://www.facebook.com/Cafe-Pub-4060-329475803882761/">4060</a></li>
+								<li><a href="http://www.facebook.com/elempedradillo">El Empedradillo</a></li>
+							</ul>
+								
+								
+							</div>
+						</div>
+					</div>
+					<div class="columna columna-33">
+						<div class="bloque-servicio">
+							
+							<div class="bloque-contenido-servicio">
+								<h3>Servicio 3</h3>
+								<p>También contamos con accesorios que estan a la venta para tu amado felino</p>
+								
+							</div>
+						</div>
+					</div>
+				</div> <!--2-->
+			</div> <!-1-->
+		</section>
+		<section id="galeria">
+			<h1>GALERIA</h1>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galería de Imágenes - Potosí, Bolivia</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            width: 80%;
+            margin: auto;
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            margin-top: 20px;
+        }
+        h1 {
+            color: #0077b6;
+            text-align: center;
+        }
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 15px;
+            margin-top: 20px;
+        }
+        .gallery img {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            cursor: pointer;
+            transition: transform 0.2s ease;
+        }
+        .gallery img:hover {
+            transform: scale(1.05);
+        }
+        .caption {
+            text-align: center;
+            margin-top: 10px;
+            font-size: 0.9em;
+            color: #555;
+        }
+        /* Estilos para el modal */
+        .modal {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.8);
+            justify-content: center;
+            align-items: center;
+            z-index: 10;
+        }
+        .modal-content {
+            max-width: 90%;
+            max-height: 90%;
+        }
+        .modal img {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+        }
+        .close {
+            position: absolute;
+            top: 20px;
+            right: 30px;
+            color: #fff;
+            font-size: 2rem;
+            font-weight: bold;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h1>Galería de Imágenes de Potosí, Bolivia</h1>
+    <p>Explora los maravillosos paisajes y atracciones turísticas de Potosí a través de esta galería de imágenes.</p>
+
+    <div class="gallery">
+        <div>
+            <img src="images/im1.jpg" alt="Salar de Uyuni" onclick="openModal(this)">
+              <img src="images/im.jfif" alt="Salar de Uyuni" onclick="openModal(this)"> (generadoAI por que las reales estan caras xD)
+                <img src="images/im01.jfif" alt="Salar de Uyuni" onclick="openModal(this)">
+            <p class="caption">Salar de Uyuni</p>
+        </div>
+        <div>
+            <img src="images2/im73.jpg" alt="Laguna Colorada" onclick="openModal(this)">
+            <img src="images2/im72.jpg" alt="Laguna Colorada" onclick="openModal(this)">
+            <img src="images2/im71.jpg" alt="Laguna Colorada" onclick="openModal(this)">
+            <img src="images2/im76.jfif" alt="Laguna Colorada" onclick="openModal(this)">
+            <p class="caption">Laguna Colorada</p>
+        </div>
+        <div>
+            <img src="images2/im16.jpeg" alt="Cerro Rico" onclick="openModal(this)">
+            <img src="images2/im11.jfif" alt="Cerro Rico" onclick="openModal(this)">
+            <img src="images2/im74.jpg" alt="Cerro Rico" onclick="openModal(this)">
+
+            <p class="caption">Cerro Rico de Potosí</p>
+        </div>
+        <div>
+            <img src="images2/im23.jpeg" alt="Casa de la Moneda" onclick="openModal(this)">
+             <img src="images2/im27.jpeg" alt="Casa de la Moneda" onclick="openModal(this)">
+              <img src="images2/im25.jpeg" alt="Casa de la Moneda" onclick="openModal(this)">
+                <img src="images2/im30.jpeg" alt="Casa de la Moneda" onclick="openModal(this)">
+                  <img src="images2/im28.jpeg" alt="Casa de la Moneda" onclick="openModal(this)">
+
+              <p class="caption">Casa de la Moneda</p>
+          </div>
+                <div>
+            <img src="images2/im42.jpeg" alt="Iglesia San Francisco" onclick="openModal(this)">
+            <img src="images2/im47.jpeg" alt="Iglesia San Francisco" onclick="openModal(this)">
+            <img src="images2/im41.jpeg" alt="Iglesia San Francisco" onclick="openModal(this)">
+            <img src="images2/im43.jpeg" alt="Iglesia San Francisco" onclick="openModal(this)">
+            <img src="images2/im44.jpeg" alt="Iglesia San Francisco" onclick="openModal(this)">
+            <img src="images2/im45.jpeg" alt="Iglesia San Francisco" onclick="openModal(this)">
+            <img src="images2/im46.jpeg" alt="Iglesia San Francisco" onclick="openModal(this)">
+            <img src="images2/im48.jpeg" alt="Iglesia San Francisco" onclick="openModal(this)">
+             <p class="caption">Iglesia San Francisco</p>
+          </div>
+          <div>
+            <img src="images2/im49.jpeg" alt="Santa Basilica" onclick="openModal(this)">
+            <img src="images2/im50.jpeg" alt="Santa Basilica" onclick="openModal(this)">
+            <img src="images2/im51.jpeg" alt="Santa Basilica" onclick="openModal(this)">
+            <img src="images2/im52.jpeg" alt="Santa Basilica" onclick="openModal(this)">
+             <p class="caption">Santa Basílica</p>
+          </div>
+          <div>
+            <img src="images2/im77.jpg" alt="Santa Teresa" onclick="openModal(this)">
+            <img src="images2/im35.jpeg" alt="Santa Teresa" onclick="openModal(this)">
+            <img src="images2/im32.jpeg" alt="Santa Teresa" onclick="openModal(this)">
+            <img src="images2/im38.jpeg" alt="Santa Teresa" onclick="openModal(this)">
+            <img src="images2/im39.jpeg" alt="Santa Teresa" onclick="openModal(this)">
+            <img src="images2/im31.jpeg" alt="Santa Teresa" onclick="openModal(this)">
+            <img src="images/im33.jpeg" alt="Santa Teresa" onclick="openModal(this)">
+            <img src="images/im34.jpeg" alt="Santa Teresa" onclick="openModal(this)">
+
+             <p class="caption">Convento de Santa Teresa</p>
+          </div>
+           <div>
+            <img src="images/im20.jpeg" alt="Minería" onclick="openModal(this)">
+            <img src="images/im18.jpeg" alt="Minería" onclick="openModal(this)">
+            <img src="images/im17.jpeg" alt="Minería" onclick="openModal(this)">
+            <img src="images/im19.jpeg" alt="Minería" onclick="openModal(this)">
+                         <p class="caption">Minería en el Cerro "Rico"</p>
+          </div>
+        <!-- Añade más imágenes de la misma forma -->
+    </div>
+</div>
+
+<!-- Modal -->
+<div class="modal" id="modal">
+    <span class="close" onclick="closeModal()">&times;</span>
+    <div class="modal-content">
+        <img id="modalImg" src="" alt="Imagen ampliada">
+    </div>
+</div>
+
+<script>
+    // Abre el modal y muestra la imagen en pantalla completa
+    function openModal(image) {
+        var modal = document.getElementById("modal");
+        var modalImg = document.getElementById("modalImg");
+        modal.style.display = "flex";
+        modalImg.src = image.src;
+    }
+
+    // Cierra el modal
+    function closeModal() {
+        var modal = document.getElementById("modal");
+        modal.style.display = "none";
+    }
+</script>
+
+</body>
+		<hr>	
+		
+			        <section id="nosotros">
+			         <div>
+			         	<h2>Acerca de nosotros</h2>
+			         
+			         	<p>Hola, esta es una pagina web al servicio de la educación donde se comparte y divulga información sobre Potosí.
+Este sitio lo administra mi persona, me presento, soy Dilan, estudiante de la U.E. Me interesa mucho el desarrollo y diseño de sitios web y es de esta manera que surgió esta página.
+Por otro lado me apasiona la educación y considero que no suficiente información sobre Bolivia es compartida en internet, así que cree este sitio para ello. Toda la información recopilada y compartida aquí solo tiene fines informativos y educativos.   </p>
+			         	
+			     </section>
+		
+		<section id="contactenos" class="seccion">
+			<h1>Formulario de Consultas</h1>
+			<div class="container-fluid2">				
+				<div class="row">
+					<div class="columna columna-formulario">
+						 <form method="POST" action="registro.php" onSubmit="return validarForm(this.form);">     
+						 	  <div class="form-block">
+					            <label>NOMBRES</label>         
+					            <input type="text" id="nom" name="nom" placeholder="Inserte los Nombres" required onkeydown="return validarLetras(event)" class="form-control" >
+					          </div>
+					          <div class="form-block">
+					             <label>APELLIDOS</label>
+					             <input type="text" id="apel" name="apel" placeholder="Inserte los Apellidos" required onkeydown="return validarLetras(event)" class="form-control">
+					          </div>  
+					          <div class="form-block">
+					             <label>EMAIL</label>
+					             <input type="email" id="email" name="email" placeholder="Inserte su email" class="form-control">
+					          </div>              
+					          <div class="form-block">
+					            <label>CELULAR</label>
+					            <input type="text" id="cel" name="cel" placeholder="Inserte el numero" required onKeyPress="return acceptNum(event)" class="form-control">
+					          </div>					 
+					          <div class="form-block">
+					            <label>DIRECCION</label>        
+					            <input type="text" id="dir" name="dir"  placeholder="Ingrese su direccion" required class="form-control">  
+					          </div>	
+					          <div class="form-block">
+					          	<label>CIUDAD</label>
+					          	<select name="ciudad" id="ciudad" class="form-control">
+					          		<option value="POTOSI">POTOSI</option>
+					          		<option value="ORURO">ORURO</option>
+					          		<option value="COCHABAMBA">COCHABAMBA</option>
+					          		<option value="LA PAZ">LA PAZ</option>
+					          		<option value="SANTA CRUZ" selected>SANTA CRUZ</option>
+					          		<option value="TARIJA">TARIJA</option>
+					          	</select>
+					          </div>
+					          <div class="form-block">
+					            <label>MENSAJE DE CONSULTA</label>        
+					            <textarea name="mensaje" placeholder="Formula un mensaje" required ></textarea>     
+					          </div>
+					          <div class="form-block bloque-ultimo">
+					          	<center><input type="submit" value="Enviar" class="boton boton-negro"></center>						
+							</div> 
+       					</form>    
+					</div>
+				</div>
+			</div>			
+		</section>	
+		<hr>
+	</main>
+	<footer>
+		<div class="container">
+			<div class="row">
+				<div class="columna-33">
+		
+					<p>Informacion de contacto </p>
+				</div>					
+				<div class="columna-33">
+					<h3>contactanos</h3>
+					<ul>
+						<li> <a href="#">opasistente@gmail.com</a></li>
+						<li> <a href="#">+999999999(notengo)</a></li>
+						<li> <a href="#">Av. Chuquisaca<br>Tupiza- Bolivia </a></li>
+					</ul>
+				</div>
+				<div class="columna-33" >
+					<h3>Redes Sociales</h3>
+					<ul class="redes">
+						<li> <a href="#" ><i class="fa-brands fa-facebook" ></i>Facebook</a></li>
+						<li> <a href="#"><i class="fa-brands fa-twitter"></i>X</a></li>
+						<li> <a href="#"><i class="fa-brands fa-instagram"></i>Instagram</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<div class="barra-footer">
+			<small><p>Derechos Reservados -  2024<a href="#" > privado.org </a></p></small>		
+		</div>
+	</footer>
+
+
+
+		
+	<!--<script src="js/icono.js"></script>
+	<script src="js/teclado.js"></script> -->
+</body>
+</html>
